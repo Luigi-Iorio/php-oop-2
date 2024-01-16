@@ -8,5 +8,3 @@ $prodotti = [];
 foreach ($database as $prodotto) {
     array_push($prodotti, new CategoriaArticolo($prodotto["titolo"], $prodotto['prezzo'], $prodotto['immagine'], $prodotto['animale'], $prodotto['iconaAnimale'], $prodotto['articolo']));
 }
-
-var_dump($prodotti);
