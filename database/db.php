@@ -5,7 +5,7 @@ $database = [
     [
         "titolo" => "Carnilove Snack Croccante Salmone",
         "descrizione" => "Descrizione prodotto uno",
-        "prezzo" => 11.40,
+        "prezzo" => 2,
         "immagine" => "img/snack-salmone.webp",
         "animale" => "Cane",
         "iconaAnimale" => "img/dog-solid.svg",
