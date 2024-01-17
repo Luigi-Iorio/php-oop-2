@@ -1,14 +1,18 @@
 <?php
+require_once __DIR__ . '/../trait/descrizione.php';
 
 // classi
 class Prodotto
 {
+    use Descrizione;
+
     public $titolo;
     public $prezzo;
     public $immagine;
 
-    function __construct($titoloProdotto, $prezzoProdotto, $immagineProdotto)
+    function __construct($descrizione, $titoloProdotto, $prezzoProdotto, $immagineProdotto)
     {
+        $this->descrizione = $descrizione;
         $this->titolo = $titoloProdotto;
         $this->prezzo = $prezzoProdotto;
         $this->immagine = $immagineProdotto;
@@ -20,9 +24,9 @@ class CategoriaAnimale extends Prodotto
     public $animale;
     public $iconaAnimale;
 
-    function __construct($titoloProdotto, $prezzoProdotto, $immagineProdotto, $animaleCategoria, $iconaCategoria)
+    function __construct($descrizione, $titoloProdotto, $prezzoProdotto, $immagineProdotto, $animaleCategoria, $iconaCategoria)
     {
-        parent::__construct($titoloProdotto, $prezzoProdotto, $immagineProdotto);
+        parent::__construct($descrizione, $titoloProdotto, $prezzoProdotto, $immagineProdotto);
         $this->animale = $animaleCategoria;
         $this->iconaAnimale = $iconaCategoria;
     }
@@ -32,9 +36,9 @@ class CategoriaArticolo extends CategoriaAnimale
 {
     public $articolo;
 
-    function __construct($titoloProdotto, $prezzoProdotto, $immagineProdotto, $animaleCategoria, $iconaCategoria, $articoloCategoria)
+    function __construct($descrizione, $titoloProdotto, $prezzoProdotto, $immagineProdotto, $animaleCategoria, $iconaCategoria, $articoloCategoria)
     {
-        parent::__construct($titoloProdotto, $prezzoProdotto, $immagineProdotto, $animaleCategoria, $iconaCategoria);
+        parent::__construct($descrizione, $titoloProdotto, $prezzoProdotto, $immagineProdotto, $animaleCategoria, $iconaCategoria);
         $this->articolo = $articoloCategoria;
     }
 }

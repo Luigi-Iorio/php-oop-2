@@ -4,6 +4,7 @@
 $database = [
     [
         "titolo" => "Carnilove Snack Croccante Salmone",
+        "descrizione" => "Descrizione prodotto uno",
         "prezzo" => 11.40,
         "immagine" => "img/snack-salmone.webp",
         "animale" => "Cane",
@@ -12,6 +13,7 @@ $database = [
     ],
     [
         "titolo" => "Corda Multicolore",
+        "descrizione" => "Descrizione prodotto due",
         "prezzo" => 2.19,
         "immagine" => "img/corda-multicolore.jpg",
         "animale" => "Gatto",
@@ -20,6 +22,7 @@ $database = [
     ],
     [
         "titolo" => "Cuccia Per Cani Verde",
+        "descrizione" => "Descrizione prodotto tre",
         "prezzo" => 68.99,
         "immagine" => "img/cuccia-verde.webp",
         "animale" => "Cane",
@@ -28,6 +31,7 @@ $database = [
     ],
     [
         "titolo" => "Palla Multicolore",
+        "descrizione" => "Descrizione prodotto quattro",
         "prezzo" => 28.35,
         "immagine" => "img/palla-multicolore.jpg",
         "animale" => "Cane",
@@ -36,6 +40,7 @@ $database = [
     ],
     [
         "titolo" => "Purina Salmone",
+        "descrizione" => "Descrizione prodotto cinque",
         "prezzo" => 10.69,
         "immagine" => "img/cibo-purina.jpg",
         "animale" => "Gatto",
@@ -44,6 +49,7 @@ $database = [
     ],
     [
         "titolo" => "Animonda Carne di Vitello",
+        "descrizione" => "Descrizione prodotto sei",
         "prezzo" => 2.18,
         "immagine" => "img/cibo-animonda.jpg",
         "animale" => "Gatto",

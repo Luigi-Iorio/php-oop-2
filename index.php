@@ -39,6 +39,7 @@ require_once __DIR__ . '/controllers/controllerProdotti.php';
                         </div>
                         <div class="info">
                             <h4><?php echo $prodotto->titolo ?></h4>
+                            <p><?php echo $prodotto->descrizione ?></p>
                             <p>Prezzo prodotto: <?php echo $prodotto->prezzo ?> €</p>
                             <div class="animale">
                                 <p>Animale: <?php echo $prodotto->animale ?></p>
