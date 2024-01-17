@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/controllers/controllerProdotti.php';
+require_once __DIR__ . '/exceptions/numeroDecimale.php';
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +41,16 @@ require_once __DIR__ . '/controllers/controllerProdotti.php';
                         <div class="info">
                             <h4><?php echo $prodotto->titolo ?></h4>
                             <p><?php echo $prodotto->descrizione ?></p>
-                            <p>Prezzo prodotto: <?php echo $prodotto->prezzo ?> €</p>
+                            <p>Prezzo prodotto:
+                                <?php
+                                try {
+                                    echo verificaNumeroDecimale($prodotto->prezzo);
+                                    echo $prodotto->prezzo;
+                                } catch (Exception $errore) {
+                                    echo $errore->getMessage();
+                                }
+                                ?>
+                            </p>
                             <div class="animale">
                                 <p>Animale: <?php echo $prodotto->animale ?></p>
                                 <img src="<?php echo $prodotto->iconaAnimale ?>" alt="<?php echo $prodotto->animale ?>">
