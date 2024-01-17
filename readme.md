@@ -54,3 +54,15 @@ Nel file `controllerProdotti.php`, viene gestita la logica di caricamento dei da
 - **Iterazione sui dati del database**: Un ciclo foreach scorre ogni elemento del database e crea un nuovo oggetto CategoriaArticolo per ogni elemento, popolando l'array $prodotti.
 
 Questo controller si occupa di creare un set di oggetti in base ai dati forniti dal database, preparando così i dati necessari per la visualizzazione in pagina.
+
+#### Implementazione Trait
+
+Nel file `descrizione.php`, è stato implementato un trait denominato Descrizione. Il trait è stato definito con una singola proprietà pubblica `$descrizione`.
+
+Questo trait può essere utilizzato da altre classi, permettendo loro di includere facilmente una descrizione.
+
+#### Implementazione Exceptions
+
+Nel file `numeroDecimale.php`, è stata implementata una funzionalità che verifica se un dato argomento è un numero decimale. La funzione `verificaNumeroDecimale` prende un argomento e lancia un'eccezione se non è di tipo float. L'eccezione viene generata con un messaggio di errore personalizzato indicando anche il valore che ha causato il problema.
+
+Nel file `index.php`, all'interno di un blocco try-catch, viene chiamata la funzione `verificaNumeroDecimale` passando il prezzo del prodotto come argomento. Se l'argomento non è un numero decimale, viene catturata e gestita l'eccezione, stampando il messaggio di errore appropriato.
